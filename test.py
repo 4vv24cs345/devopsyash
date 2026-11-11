@@ -1,12 +1,9 @@
 import unittest
+from app import add
 
-
-class TestApplication(unittest.TestCase):
-
-    def test_application(self):
-        name = "VVCE"
-        self.assertEqual(name, "VVCE")
-
+class TestApp(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
 
 if __name__ == "__main__":
     unittest.main()
